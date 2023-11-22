@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 class MainMenu_User : AppCompatActivity() {
-
+//This is For Main Menu Spinner and Buttons
     lateinit var recyclerView: RecyclerView
     lateinit var dataList: ArrayList<DataClass>
     lateinit var imageList: Array<Int>

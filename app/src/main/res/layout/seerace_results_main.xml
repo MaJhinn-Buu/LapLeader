@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#040404"
+    android:backgroundTint="#040404">
+
+    <View
+        android:id="@+id/dividerline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="76dp"
+        android:background="#5271FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/SRM_backbutton"
+        android:layout_width="33dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="20dp"
+        android:Text="c"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/dividerline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.892"
+        app:srcCompat="@drawable/backbutton" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/museomoderno_medium"
+        android:includeFontPadding="true"
+        android:text="LapLeader"
+        android:textColor="#FFFFFF"
+        android:textSize="31sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/dividerline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintStart_toEndOf="@+id/backbutton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.615" />
+
+    <TextView
+        android:id="@+id/GPTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="20xx Monaco GP"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dividerline" />
+
+    <TextView
+        android:id="@+id/LapCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="XX Laps"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/RaceDate"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GPTitle" />
+
+    <TextView
+        android:id="@+id/RaceDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="96dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="12/21/2023"
+        android:textColor="#FDFDFD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GPTitle" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="248dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="44dp"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LapCount"
+        app:srcCompat="@drawable/p1" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="224dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="fitStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:srcCompat="@drawable/p2" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="196dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="28dp"
+        android:scaleType="fitStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@drawable/p3" />
+
+    <TextView
+        android:id="@+id/P1_Driver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="76dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="A. Driver"
+        android:textColor="#FAF9F9"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/RaceDate" />
+
+    <TextView
+        android:id="@+id/P1_Const"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
+        android:text="Constructor"
+        android:textColor="#707070"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/P1_Driver" />
+
+    <TextView
+        android:id="@+id/P2_Driver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="117dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="B. Driver"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/P1_Const" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="108dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="Constructor"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/P2_Driver" />
+
+    <TextView
+        android:id="@+id/P3_Driver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="135dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="C. Driver"
+        android:textColor="#FFFCFC"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/P3_Const"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="120dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="Constructor"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/P3_Driver" />
+
+    <View
+        android:id="@+id/NewLineDiv"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="608dp"
+        android:background="#8C52FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="04"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/NewLineDiv"
+        app:layout_constraintEnd_toStartOf="@+id/P4_Driver"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/P4_Driver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="TextView"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/NewLineDiv"
+        app:layout_constraintEnd_toStartOf="@+id/P4_Const" />
+
+    <TextView
+        android:id="@+id/P4_Const"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/NewLineDiv"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/NewLineDiv02"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="76dp"
+        android:background="#00BF63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NewLineDiv" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="05"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/NewLineDiv02"
+        app:layout_constraintEnd_toStartOf="@+id/P5_Driver"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/P5_Driver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="TextView"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/NewLineDiv02"
+        app:layout_constraintEnd_toStartOf="@+id/P5_Const" />
+
+    <TextView
+        android:id="@+id/P5_Const"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/NewLineDiv02"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/NewLineDiv03"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="76dp"
+        android:background="#00BF63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NewLineDiv02" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="06"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/NewLineDiv03"
+        app:layout_constraintEnd_toStartOf="@+id/P6_Driver"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/P6_Driver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="TextView"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/NewLineDiv03"
+        app:layout_constraintEnd_toStartOf="@+id/P6_Const" />
+
+    <TextView
+        android:id="@+id/P6_Const"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/NewLineDiv03"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/NewLineDiv04"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="76dp"
+        android:background="#00BF63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NewLineDiv03" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="07"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/NewLineDiv04"
+        app:layout_constraintEnd_toStartOf="@+id/P7_Driver"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/P7_Driver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="TextView"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/NewLineDiv04"
+        app:layout_constraintEnd_toStartOf="@+id/P7_Const" />
+
+    <TextView
+        android:id="@+id/P7_Const"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/NewLineDiv04"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/NewLineDiv05"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="76dp"
+        android:background="#00BF63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NewLineDiv04" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="08"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/NewLineDiv05"
+        app:layout_constraintEnd_toStartOf="@+id/P8_Driver"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/P8_Driver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="TextView"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/NewLineDiv05"
+        app:layout_constraintEnd_toStartOf="@+id/P8_Const" />
+
+    <TextView
+        android:id="@+id/P8_Const"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/NewLineDiv05"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/NewLineDiv06"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="76dp"
+        android:background="#E4C238"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NewLineDiv05" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="09"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/NewLineDiv06"
+        app:layout_constraintEnd_toStartOf="@+id/P9_Driver"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/P9_Driver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="TextView"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/NewLineDiv06"
+        app:layout_constraintEnd_toStartOf="@+id/P9_Const" />
+
+    <TextView
+        android:id="@+id/P9_Const"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/NewLineDiv06"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/NewLineDiv07"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="76dp"
+        android:background="#E4C238"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NewLineDiv06" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="10"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/NewLineDiv07"
+        app:layout_constraintEnd_toStartOf="@+id/P10_Driver"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/P10_Driver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="TextView"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/NewLineDiv07"
+        app:layout_constraintEnd_toStartOf="@+id/P10_Const" />
+
+    <TextView
+        android:id="@+id/P10_Const"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/NewLineDiv07"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

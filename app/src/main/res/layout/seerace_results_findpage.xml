@@ -18,22 +18,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/MMLeaderboard_User"
-        android:layout_width="383dp"
-        android:layout_height="410dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dividerline" />
-
     <ImageButton
-        android:id="@+id/backbutton"
+        android:id="@+id/SRF_backbutton"
         android:layout_width="33dp"
         android:layout_height="28dp"
         android:layout_marginStart="12dp"
         android:layout_marginBottom="20dp"
+        android:Text="c"
         android:adjustViewBounds="true"
         android:background="#00FFFFFF"
         android:scaleType="centerInside"
@@ -60,33 +51,59 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.615" />
 
-    <ImageButton
-        android:id="@+id/btnraceresult"
-        android:layout_width="340dp"
-        android:layout_height="79dp"
-        android:layout_marginTop="48dp"
-        android:adjustViewBounds="true"
-        android:backgroundTint="#00FFFFFF"
-        android:scaleType="centerCrop"
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/glacial_indifference_bold"
+        android:text="Find Race Result"
+        android:textColor="#5271FF"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/MMLeaderboard_User"
-        app:srcCompat="@drawable/red_user" />
+        app:layout_constraintTop_toBottomOf="@+id/dividerline" />
 
-    <ImageButton
-        android:id="@+id/btnseestandings"
-        android:layout_width="374dp"
-        android:layout_height="78dp"
-        android:layout_marginBottom="80dp"
-        android:adjustViewBounds="true"
-        android:backgroundTint="#00FFFFFF"
-        android:scaleType="centerCrop"
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="250dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#5271FF"
+        android:ems="10"
+        android:hint="Year"
+        android:inputType="text"
+        android:textColorHint="#A6A6A6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Spinner
+        android:id="@+id/selectRace_Spn"
+        android:layout_width="250dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#5271FF"
+        android:foregroundTint="#F4F3F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+    <Button
+        android:id="@+id/btnFindRace"
+        android:layout_width="120dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#00BF63"
+        android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/green_user"
-        tools:ignore="ExtraText" />
+        app:layout_constraintTop_toBottomOf="@+id/selectRace_Spn"
+        app:layout_constraintVertical_bias="0.171" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

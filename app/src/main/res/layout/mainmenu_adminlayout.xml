@@ -8,7 +8,7 @@
     android:backgroundTint="#040404">
 
     <View
-        android:id="@+id/dividerline"
+        android:id="@+id/ADMINdividerline"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginTop="76dp"
@@ -19,17 +19,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/MMLeaderboard_User"
+        android:id="@+id/MMLeaderboard_Admin"
         android:layout_width="383dp"
         android:layout_height="410dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dividerline" />
+        app:layout_constraintTop_toBottomOf="@+id/ADMINdividerline" />
 
     <ImageButton
-        android:id="@+id/backbutton"
+        android:id="@+id/ADMINbackbutton"
         android:layout_width="33dp"
         android:layout_height="28dp"
         android:layout_marginStart="12dp"
@@ -37,48 +37,62 @@
         android:adjustViewBounds="true"
         android:background="#00FFFFFF"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toTopOf="@+id/dividerline"
+        app:layout_constraintBottom_toTopOf="@+id/ADMINdividerline"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.892"
         app:srcCompat="@drawable/backbutton" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/AdminLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
         android:fontFamily="@font/museomoderno_medium"
         android:includeFontPadding="true"
         android:text="LapLeader"
         android:textColor="#FFFFFF"
         android:textSize="31sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/dividerline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.391"
-        app:layout_constraintStart_toEndOf="@+id/backbutton"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.615" />
+        app:layout_constraintStart_toEndOf="@+id/ADMINbackbutton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/glacial_indifference_bold"
+        android:text=" ADMIN PAGE"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/ADMINdividerline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AdminLogo" />
 
     <ImageButton
-        android:id="@+id/btnraceresult"
-        android:layout_width="340dp"
-        android:layout_height="79dp"
-        android:layout_marginTop="48dp"
+        android:id="@+id/btnaddRR"
+        android:layout_width="323dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
         android:adjustViewBounds="true"
         android:backgroundTint="#00FFFFFF"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/MMLeaderboard_User"
-        app:srcCompat="@drawable/red_user" />
+        app:layout_constraintTop_toBottomOf="@+id/MMLeaderboard_Admin"
+        app:srcCompat="@drawable/admin01" />
 
     <ImageButton
-        android:id="@+id/btnseestandings"
-        android:layout_width="374dp"
-        android:layout_height="78dp"
-        android:layout_marginBottom="80dp"
+        android:id="@+id/btneditRR"
+        android:layout_width="350dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="100dp"
         android:adjustViewBounds="true"
         android:backgroundTint="#00FFFFFF"
         android:scaleType="centerCrop"
@@ -86,7 +100,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/green_user"
+        app:srcCompat="@drawable/admin02"
+        tools:ignore="ExtraText" />
+
+    <ImageButton
+        android:id="@+id/btneditStand"
+        android:layout_width="403dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="28dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/admin03"
         tools:ignore="ExtraText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
