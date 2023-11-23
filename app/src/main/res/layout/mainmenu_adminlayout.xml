@@ -74,48 +74,49 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/AdminLogo" />
 
-    <ImageButton
-        android:id="@+id/btnaddRR"
-        android:layout_width="323dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="40dp"
-        android:adjustViewBounds="true"
-        android:backgroundTint="#00FFFFFF"
-        android:scaleType="centerCrop"
+    <Button
+        android:id="@+id/btnAddRaceRes"
+        android:layout_width="232dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="179dp"
+        android:backgroundTint="#D33333"
+        android:text="Add Race Result"
+        app:cornerRadius="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/MMLeaderboard_Admin"
-        app:srcCompat="@drawable/admin01" />
+        app:layout_constraintTop_toBottomOf="@+id/MMLeaderboard_Admin" />
 
-    <ImageButton
-        android:id="@+id/btneditRR"
-        android:layout_width="350dp"
-        android:layout_height="64dp"
-        android:layout_marginBottom="100dp"
-        android:adjustViewBounds="true"
-        android:backgroundTint="#00FFFFFF"
-        android:scaleType="centerCrop"
+    <Button
+        android:id="@+id/btnEdtRaceRes"
+        android:layout_width="262dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="179dp"
+        android:backgroundTint="#E4C238"
+        android:text="Edit Race Result"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddRaceRes" />
+
+    <Button
+        android:id="@+id/btnEdtStands"
+        android:layout_width="292dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginBottom="27dp"
+        android:backgroundTint="#00BF63"
+        android:text="Edit Standings"
+        app:cornerRadius="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/admin02"
-        tools:ignore="ExtraText" />
-
-    <ImageButton
-        android:id="@+id/btneditStand"
-        android:layout_width="403dp"
-        android:layout_height="66dp"
-        android:layout_marginBottom="28dp"
-        android:adjustViewBounds="true"
-        android:backgroundTint="#00FFFFFF"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/admin03"
-        tools:ignore="ExtraText" />
+        app:layout_constraintTop_toBottomOf="@+id/btnEdtRaceRes"
+        app:layout_constraintVertical_bias="0.083" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

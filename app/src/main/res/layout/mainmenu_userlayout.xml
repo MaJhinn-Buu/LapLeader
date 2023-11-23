@@ -60,33 +60,32 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.615" />
 
-    <ImageButton
-        android:id="@+id/btnraceresult"
-        android:layout_width="340dp"
-        android:layout_height="79dp"
-        android:layout_marginTop="48dp"
-        android:adjustViewBounds="true"
-        android:backgroundTint="#00FFFFFF"
-        android:scaleType="centerCrop"
+    <Button
+        android:id="@+id/btnSeeRaceRes"
+        android:layout_width="232dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="179dp"
+        android:backgroundTint="#D33333"
+        android:text="Race Results"
+        app:cornerRadius="0dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/MMLeaderboard_User"
-        app:srcCompat="@drawable/red_user" />
+        app:layout_constraintTop_toBottomOf="@+id/MMLeaderboard_User" />
 
-    <ImageButton
-        android:id="@+id/btnseestandings"
-        android:layout_width="374dp"
-        android:layout_height="78dp"
-        android:layout_marginBottom="80dp"
-        android:adjustViewBounds="true"
-        android:backgroundTint="#00FFFFFF"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <Button
+        android:id="@+id/btnSeeStands"
+        android:layout_width="262dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="179dp"
+        android:backgroundTint="#00BF63"
+        android:text="Race Results"
+        app:cornerRadius="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/green_user"
-        tools:ignore="ExtraText" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSeeRaceRes" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

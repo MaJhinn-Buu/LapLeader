@@ -8,104 +8,104 @@
     android:backgroundTint="#040404">
 
     <View
-        android:id="@+id/dividerline"
+        android:id="@+id/ADMINdividerline"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginTop="76dp"
         android:background="#5271FF"
+        android:clickable="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/SRFbackbutton"
+        android:id="@+id/ESFbackbutton"
         android:layout_width="33dp"
         android:layout_height="28dp"
         android:layout_marginStart="12dp"
         android:layout_marginBottom="20dp"
-        android:Text="c"
         android:adjustViewBounds="true"
         android:background="#00FFFFFF"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toTopOf="@+id/dividerline"
+        app:layout_constraintBottom_toTopOf="@+id/ADMINdividerline"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.892"
         app:srcCompat="@drawable/backbutton" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/AdminLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="128dp"
         android:fontFamily="@font/museomoderno_medium"
         android:includeFontPadding="true"
         android:text="LapLeader"
         android:textColor="#FFFFFF"
         android:textSize="31sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/dividerline"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.391"
-        app:layout_constraintStart_toEndOf="@+id/SRFbackbutton"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.615" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/ESFbackbutton"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/glacial_indifference_bold"
+        android:text=" ADMIN PAGE"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/ADMINdividerline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AdminLogo" />
+
+    <TextView
+        android:id="@+id/HeadertagESF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:fontFamily="@font/glacial_indifference_bold"
-        android:text="Find Race Result"
+        android:text="What Will You Edit"
         android:textColor="#5271FF"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dividerline" />
-
-    <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="250dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="48dp"
-        android:backgroundTint="#5271FF"
-        android:ems="10"
-        android:hint="Year"
-        android:inputType="text"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#A6A6A6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
-    <Spinner
-        android:id="@+id/selectRace_Spn"
-        android:layout_width="250dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="36dp"
-        android:backgroundTint="#5271FF"
-        android:contextClickable="true"
-        android:foregroundTint="#F4F3F3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/ADMINdividerline" />
 
     <Button
-        android:id="@+id/btnFindRace"
-        android:layout_width="120dp"
-        android:layout_height="41dp"
+        android:id="@+id/btnEdtDriverST"
+        android:layout_width="220sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="96dp"
         android:backgroundTint="#00BF63"
-        android:text="Search"
+        android:text="Drivers' Cup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HeadertagESF" />
+
+    <Button
+        android:id="@+id/btnEdtConstST"
+        android:layout_width="220sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="487dp"
+        android:backgroundTint="#D33333"
+        android:text="Constructors' Cup"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/selectRace_Spn"
-        app:layout_constraintVertical_bias="0.171" />
-
+        app:layout_constraintTop_toBottomOf="@+id/btnEdtDriverST" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

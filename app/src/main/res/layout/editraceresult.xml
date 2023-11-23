@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#040404"
+    android:backgroundTint="#040404">
+
+    <View
+        android:id="@+id/ADMINdividerline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="76dp"
+        android:background="#5271FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/EDTRRbackbutton"
+        android:layout_width="33dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="20dp"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/ADMINdividerline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.892"
+        app:srcCompat="@drawable/backbutton" />
+
+    <TextView
+        android:id="@+id/AdminLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="128dp"
+        android:fontFamily="@font/museomoderno_medium"
+        android:includeFontPadding="true"
+        android:text="LapLeader"
+        android:textColor="#FFFFFF"
+        android:textSize="31sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/EDTRRbackbutton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/glacial_indifference_bold"
+        android:text=" ADMIN PAGE"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/ADMINdividerline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AdminLogo" />
+
+    <TextView
+        android:id="@+id/textViewofERR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/glacial_indifference_bold"
+        android:text="EDIT RACE RESULT"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ADMINdividerline" />
+
+    <EditText
+        android:id="@+id/YearEdt"
+        android:layout_width="275dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="#5271FF"
+        android:ems="10"
+        android:hint="20xx"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#A6A6A6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewofERR" />
+
+    <TextView
+        android:id="@+id/textVw8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="266dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="Input Year"
+        android:textColor="#6BA6DF"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/YearEdt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewofERR"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/DateEdt"
+        android:layout_width="275dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#5271FF"
+        android:ems="10"
+        android:hint="mm/dd/yyyy"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#A6A6A6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/YearEdt" />
+
+    <TextView
+        android:id="@+id/textView61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="266dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="Input Date"
+        android:textColor="#6BA6DF"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/DateEdt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.785"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/YearEdt"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/LapEdt"
+        android:layout_width="275dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#5271FF"
+        android:ems="10"
+        android:hint="60 | 55"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#A6A6A6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DateEdt" />
+
+    <TextView
+        android:id="@+id/textView62"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="266dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="Input Laps"
+        android:textColor="#6BA6DF"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/LapEdt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DateEdt"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView63"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="266dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="Input Race Location"
+        android:textColor="#6BA6DF"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/LocationEdt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LapEdt"
+        app:layout_constraintVertical_bias="0.952" />
+
+    <EditText
+        android:id="@+id/LocationEdt"
+        android:layout_width="275dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#5271FF"
+        android:ems="10"
+        android:hint="Monaco | Singapore | Las Vegas"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#A6A6A6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LapEdt" />
+
+    <TextView
+        android:id="@+id/textView121234"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="Driver"
+        android:textColor="#6BA6DF"
+        app:layout_constraintBottom_toTopOf="@+id/P1Driver_ERR"
+        app:layout_constraintEnd_toStartOf="@+id/textView1xx312232"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView1xx312232"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="24dp"
+        android:text="Team"
+        android:textColor="#6BA6DF"
+        app:layout_constraintBottom_toTopOf="@+id/P1Const_ERR"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/ERRLineDiv01"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="144dp"
+        android:background="#8C52FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LocationEdt" />
+
+    <TextView
+        android:id="@+id/textView201"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="01"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/ERRLineDiv01"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/P1Driver_ERR"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FFFCFC"
+        app:layout_constraintBottom_toTopOf="@+id/ERRLineDiv01"
+        app:layout_constraintEnd_toStartOf="@+id/P1Const_ERR"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView201" />
+
+    <Spinner
+        android:id="@+id/P1Const_ERR"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FFFCFC"
+        app:layout_constraintBottom_toTopOf="@+id/ERRLineDiv01"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Spinner
+        android:id="@+id/P2Driver_ERR"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FFFCFC"
+        app:layout_constraintBottom_toTopOf="@+id/ERRLineDiv02"
+        app:layout_constraintEnd_toStartOf="@+id/P2Const_ERR"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView202" />
+
+    <View
+        android:id="@+id/ERRLineDiv02"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="84dp"
+        android:background="#8C52FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ERRLineDiv01" />
+
+    <TextView
+        android:id="@+id/textView202"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="02"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/ERRLineDiv02"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/P2Const_ERR"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FFFCFC"
+        app:layout_constraintBottom_toTopOf="@+id/ERRLineDiv02"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Spinner
+        android:id="@+id/P3Driver_ERR"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FFFCFC"
+        app:layout_constraintBottom_toTopOf="@+id/ERRLineDiv03"
+        app:layout_constraintEnd_toStartOf="@+id/P3Const_ERR"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView203" />
+
+    <View
+        android:id="@+id/ERRLineDiv03"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="84dp"
+        android:background="#8C52FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ERRLineDiv02" />
+
+    <TextView
+        android:id="@+id/textView203"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="03"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/ERRLineDiv03"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/P3Const_ERR"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FFFCFC"
+        app:layout_constraintBottom_toTopOf="@+id/ERRLineDiv03"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Spinner
+        android:id="@+id/P4Driver_ERR"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FFFCFC"
+        app:layout_constraintBottom_toTopOf="@+id/ERRLineDiv04"
+        app:layout_constraintEnd_toStartOf="@+id/P4Const_ERR"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView204" />
+
+    <View
+        android:id="@+id/ERRLineDiv04"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="84dp"
+        android:background="#8C52FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ERRLineDiv03" />
+
+    <TextView
+        android:id="@+id/textView204"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="04"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/ERRLineDiv04"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/P4Const_ERR"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FFFCFC"
+        app:layout_constraintBottom_toTopOf="@+id/ERRLineDiv04"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Spinner
+        android:id="@+id/P5Driver_ERR"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FFFCFC"
+        app:layout_constraintBottom_toTopOf="@+id/ERRLineDiv05"
+        app:layout_constraintEnd_toStartOf="@+id/P5Const_ERR"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView205" />
+
+    <View
+        android:id="@+id/ERRLineDiv05"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="84dp"
+        android:background="#00BF63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ERRLineDiv04" />
+
+    <TextView
+        android:id="@+id/textView205"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="05"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/ERRLineDiv05"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/P5Const_ERR"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FFFCFC"
+        app:layout_constraintBottom_toTopOf="@+id/ERRLineDiv05"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Spinner
+        android:id="@+id/P6Driver_ERR"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FFFCFC"
+        app:layout_constraintBottom_toTopOf="@+id/ERRLineDiv06"
+        app:layout_constraintEnd_toStartOf="@+id/P6Const_ERR"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView206" />
+
+    <View
+        android:id="@+id/ERRLineDiv06"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="84dp"
+        android:background="#00BF63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ERRLineDiv05" />
+
+    <TextView
+        android:id="@+id/textView206"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="06"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/ERRLineDiv06"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/P6Const_ERR"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FFFCFC"
+        app:layout_constraintBottom_toTopOf="@+id/ERRLineDiv06"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Spinner
+        android:id="@+id/P7Driver_ERR"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FFFCFC"
+        app:layout_constraintBottom_toTopOf="@+id/ERRLineDiv07"
+        app:layout_constraintEnd_toStartOf="@+id/P7Const_ERR"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView207" />
+
+    <View
+        android:id="@+id/ERRLineDiv07"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="84dp"
+        android:background="#00BF63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ERRLineDiv06" />
+
+    <TextView
+        android:id="@+id/textView207"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="07"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/ERRLineDiv07"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/P7Const_ERR"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FFFCFC"
+        app:layout_constraintBottom_toTopOf="@+id/ERRLineDiv07"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Spinner
+        android:id="@+id/P8Driver_ERR"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FFFCFC"
+        app:layout_constraintBottom_toTopOf="@+id/ERRLineDiv08"
+        app:layout_constraintEnd_toStartOf="@+id/P8Const_ERR"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView208" />
+
+    <View
+        android:id="@+id/ERRLineDiv08"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="84dp"
+        android:background="#00BF63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ERRLineDiv07" />
+
+    <TextView
+        android:id="@+id/textView208"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="08"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/ERRLineDiv08"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/P8Const_ERR"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FFFCFC"
+        app:layout_constraintBottom_toTopOf="@+id/ERRLineDiv08"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Spinner
+        android:id="@+id/P9Driver_ERR"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FFFCFC"
+        app:layout_constraintBottom_toTopOf="@+id/ERRLineDiv09"
+        app:layout_constraintEnd_toStartOf="@+id/P8Const_ERR"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView209" />
+
+    <View
+        android:id="@+id/ERRLineDiv09"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="84dp"
+        android:background="#E4C238"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ERRLineDiv08" />
+
+    <TextView
+        android:id="@+id/textView209"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="09"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/ERRLineDiv09"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/P9Const_ERR"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FFFCFC"
+        app:layout_constraintBottom_toTopOf="@+id/ERRLineDiv09"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Spinner
+        android:id="@+id/P10Driver_ERR"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FFFCFC"
+        app:layout_constraintBottom_toTopOf="@+id/ERRLineDiv10"
+        app:layout_constraintEnd_toStartOf="@+id/P8Const_ERR"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView210" />
+
+    <View
+        android:id="@+id/ERRLineDiv10"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="84dp"
+        android:background="#E4C238"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ERRLineDiv09" />
+
+    <TextView
+        android:id="@+id/textView210"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/dmsans_variablefont"
+        android:text="10"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/ERRLineDiv10"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/P10Const_ERR"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FFFCFC"
+        app:layout_constraintBottom_toTopOf="@+id/ERRLineDiv10"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnEdtRace"
+        android:layout_width="120dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#00BF63"
+        android:text="Edit Race"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ERRLineDiv10"
+        app:layout_constraintVertical_bias="0.455" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

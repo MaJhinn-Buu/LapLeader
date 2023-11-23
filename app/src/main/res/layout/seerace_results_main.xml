@@ -38,6 +38,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="116dp"
         android:fontFamily="@font/museomoderno_medium"
         android:includeFontPadding="true"
         android:text="LapLeader"
@@ -171,6 +172,7 @@
         android:layout_marginEnd="108dp"
         android:fontFamily="@font/dmsans_variablefont"
         android:text="Constructor"
+        android:textColor="#707070"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -197,13 +199,15 @@
         android:id="@+id/P3_Const"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginEnd="120dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginEnd="127dp"
         android:fontFamily="@font/dmsans_variablefont"
         android:text="Constructor"
+        android:textColor="#707070"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/P3_Driver" />
 
     <View
@@ -240,6 +244,7 @@
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/dmsans_variablefont"
         android:text="TextView"
+        android:textColor="#FFFCFC"
         android:textSize="21sp"
         app:layout_constraintBottom_toTopOf="@+id/NewLineDiv"
         app:layout_constraintEnd_toStartOf="@+id/P4_Const" />
@@ -251,6 +256,7 @@
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="8dp"
         android:text="TextView"
+        android:textColor="#707070"
         android:textSize="21sp"
         app:layout_constraintBottom_toTopOf="@+id/NewLineDiv"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -280,6 +286,7 @@
         app:layout_constraintEnd_toStartOf="@+id/P5_Driver"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/P5_Driver"
         android:layout_width="wrap_content"
@@ -288,6 +295,7 @@
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/dmsans_variablefont"
         android:text="TextView"
+        android:textColor="#FFFCFC"
         android:textSize="21sp"
         app:layout_constraintBottom_toTopOf="@+id/NewLineDiv02"
         app:layout_constraintEnd_toStartOf="@+id/P5_Const" />
@@ -299,6 +307,7 @@
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="8dp"
         android:text="TextView"
+        android:textColor="#707070"
         android:textSize="21sp"
         app:layout_constraintBottom_toTopOf="@+id/NewLineDiv02"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -328,6 +337,7 @@
         app:layout_constraintEnd_toStartOf="@+id/P6_Driver"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/P6_Driver"
         android:layout_width="wrap_content"
@@ -336,6 +346,7 @@
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/dmsans_variablefont"
         android:text="TextView"
+        android:textColor="#FFFCFC"
         android:textSize="21sp"
         app:layout_constraintBottom_toTopOf="@+id/NewLineDiv03"
         app:layout_constraintEnd_toStartOf="@+id/P6_Const" />
@@ -347,6 +358,7 @@
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="8dp"
         android:text="TextView"
+        android:textColor="#707070"
         android:textSize="21sp"
         app:layout_constraintBottom_toTopOf="@+id/NewLineDiv03"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -376,6 +388,7 @@
         app:layout_constraintEnd_toStartOf="@+id/P7_Driver"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/P7_Driver"
         android:layout_width="wrap_content"
@@ -384,6 +397,7 @@
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/dmsans_variablefont"
         android:text="TextView"
+        android:textColor="#FFFCFC"
         android:textSize="21sp"
         app:layout_constraintBottom_toTopOf="@+id/NewLineDiv04"
         app:layout_constraintEnd_toStartOf="@+id/P7_Const" />
@@ -395,6 +409,7 @@
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="8dp"
         android:text="TextView"
+        android:textColor="#707070"
         android:textSize="21sp"
         app:layout_constraintBottom_toTopOf="@+id/NewLineDiv04"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -424,6 +439,7 @@
         app:layout_constraintEnd_toStartOf="@+id/P8_Driver"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/P8_Driver"
         android:layout_width="wrap_content"
@@ -432,6 +448,7 @@
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/dmsans_variablefont"
         android:text="TextView"
+        android:textColor="#FFFCFC"
         android:textSize="21sp"
         app:layout_constraintBottom_toTopOf="@+id/NewLineDiv05"
         app:layout_constraintEnd_toStartOf="@+id/P8_Const" />
@@ -443,6 +460,7 @@
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="8dp"
         android:text="TextView"
+        android:textColor="#707070"
         android:textSize="21sp"
         app:layout_constraintBottom_toTopOf="@+id/NewLineDiv05"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -472,6 +490,7 @@
         app:layout_constraintEnd_toStartOf="@+id/P9_Driver"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/P9_Driver"
         android:layout_width="wrap_content"
@@ -480,6 +499,7 @@
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/dmsans_variablefont"
         android:text="TextView"
+        android:textColor="#FFFCFC"
         android:textSize="21sp"
         app:layout_constraintBottom_toTopOf="@+id/NewLineDiv06"
         app:layout_constraintEnd_toStartOf="@+id/P9_Const" />
@@ -491,6 +511,7 @@
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="8dp"
         android:text="TextView"
+        android:textColor="#707070"
         android:textSize="21sp"
         app:layout_constraintBottom_toTopOf="@+id/NewLineDiv06"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -520,6 +541,7 @@
         app:layout_constraintEnd_toStartOf="@+id/P10_Driver"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/P10_Driver"
         android:layout_width="wrap_content"
@@ -528,6 +550,7 @@
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/dmsans_variablefont"
         android:text="TextView"
+        android:textColor="#FFFCFC"
         android:textSize="21sp"
         app:layout_constraintBottom_toTopOf="@+id/NewLineDiv07"
         app:layout_constraintEnd_toStartOf="@+id/P10_Const" />
@@ -539,6 +562,7 @@
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="8dp"
         android:text="TextView"
+        android:textColor="#707070"
         android:textSize="21sp"
         app:layout_constraintBottom_toTopOf="@+id/NewLineDiv07"
         app:layout_constraintEnd_toEndOf="parent" />
