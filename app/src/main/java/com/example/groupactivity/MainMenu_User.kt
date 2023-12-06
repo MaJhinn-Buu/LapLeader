@@ -2,14 +2,19 @@ package com.example.groupactivity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
+
 class MainMenu_User : AppCompatActivity() {
 //This is For Main Menu Spinner and Buttons
     lateinit var recyclerView: RecyclerView
     lateinit var dataList: ArrayList<DataClass>
     lateinit var imageList: Array<Int>
     lateinit var titleList: Array<String>
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
 

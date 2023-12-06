@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "593689285593",
+    "project_id": "lapleader-46635",
+    "storage_bucket": "lapleader-46635.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593689285593:android:008684cea688b0b7d27fc8",
+        "android_client_info": {
+          "package_name": "com.example.groupactivity"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKxtfykOd-adblkkoFWlXr4-ce_DkIXaM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
