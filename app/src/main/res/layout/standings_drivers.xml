@@ -24,7 +24,6 @@
         android:layout_height="28dp"
         android:layout_marginStart="12dp"
         android:layout_marginBottom="20dp"
-        android:Text="c"
         android:adjustViewBounds="true"
         android:background="#00FFFFFF"
         android:scaleType="centerInside"
@@ -47,7 +46,7 @@
         app:layout_constraintBottom_toTopOf="@+id/dividerline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.391"
-        app:layout_constraintStart_toEndOf="@+id/backbutton"
+        app:layout_constraintStart_toEndOf="@+id/LBD_backbutton"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.615" />
 

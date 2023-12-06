@@ -7,6 +7,15 @@
     android:background="#040404"
     android:backgroundTint="#040404">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
     <View
         android:id="@+id/ADMINdividerline"
         android:layout_width="match_parent"
@@ -33,24 +42,24 @@
         app:layout_constraintVertical_bias="0.892"
         app:srcCompat="@drawable/backbutton" />
 
-    <TextView
-        android:id="@+id/AdminLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
-        android:layout_marginEnd="128dp"
-        android:fontFamily="@font/museomoderno_medium"
-        android:includeFontPadding="true"
-        android:text="LapLeader"
-        android:textColor="#FFFFFF"
-        android:textSize="31sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/ADDRRbackbutton"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/AdminLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="128dp"
+                android:fontFamily="@font/museomoderno_medium"
+                android:includeFontPadding="true"
+                android:text="LapLeader"
+                android:textColor="#FFFFFF"
+                android:textSize="31sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.842"
+                app:layout_constraintStart_toEndOf="@+id/ADDRRbackbutton"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+            <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -95,25 +104,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewofARR" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginEnd="266dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/dmsans_variablefont"
-        android:text="Input Year"
-        android:textColor="#6BA6DF"
-        android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/YearAdd"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.916"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewofARR"
-        app:layout_constraintVertical_bias="1.0" />
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="266dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/dmsans_variablefont"
+                android:text="Input Year"
+                android:textColor="#6BA6DF"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toTopOf="@+id/YearAdd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewofARR"
+                app:layout_constraintVertical_bias="1.0" />
 
-    <EditText
+            <EditText
         android:id="@+id/DateAdd"
         android:layout_width="275dp"
         android:layout_height="57dp"
@@ -129,25 +138,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/YearAdd" />
 
-    <TextView
-        android:id="@+id/textView51"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginEnd="266dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/dmsans_variablefont"
-        android:text="Input Date"
-        android:textColor="#6BA6DF"
-        android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/DateAdd"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.785"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/YearAdd"
-        app:layout_constraintVertical_bias="1.0" />
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="266dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/dmsans_variablefont"
+                android:text="Input Date"
+                android:textColor="#6BA6DF"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toTopOf="@+id/DateAdd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/YearAdd"
+                app:layout_constraintVertical_bias="1.0" />
 
-    <EditText
+            <EditText
         android:id="@+id/LapAdd"
         android:layout_width="275dp"
         android:layout_height="57dp"
@@ -163,43 +172,43 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/DateAdd" />
 
-    <TextView
-        android:id="@+id/textView52"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginEnd="266dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/dmsans_variablefont"
-        android:text="Input Laps"
-        android:textColor="#6BA6DF"
-        android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/LapAdd"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DateAdd"
-        app:layout_constraintVertical_bias="1.0" />
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="266dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/dmsans_variablefont"
+                android:text="Input Laps"
+                android:textColor="#6BA6DF"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toTopOf="@+id/LapAdd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/DateAdd"
+                app:layout_constraintVertical_bias="1.0" />
 
-    <TextView
-        android:id="@+id/textView53"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginEnd="266dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/dmsans_variablefont"
-        android:text="Input Race Location"
-        android:textColor="#6BA6DF"
-        android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/LocationAdd"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LapAdd"
-        app:layout_constraintVertical_bias="0.952" />
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="266dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/dmsans_variablefont"
+                android:text="Input Race Location"
+                android:textColor="#6BA6DF"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toTopOf="@+id/LocationAdd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LapAdd"
+                app:layout_constraintVertical_bias="1.0" />
 
-    <EditText
+            <EditText
         android:id="@+id/LocationAdd"
         android:layout_width="275dp"
         android:layout_height="57dp"
@@ -721,5 +730,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ARRLineDiv10"
         app:layout_constraintVertical_bias="0.455" />
-
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

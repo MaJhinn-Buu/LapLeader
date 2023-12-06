@@ -241,5 +241,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CupPlace05" />
 
+    <Button
+        android:id="@+id/saveConsCup"
+        android:layout_width="120dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="159dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="51dp"
+        android:backgroundTint="#00BF63"
+        android:text="Confirm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
