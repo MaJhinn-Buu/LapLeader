@@ -1,4 +1,8 @@
 package com.example.groupactivity
 
-class Drivers {
-}
+data class Drivers(var RacerID : Int,
+                    var DriversCupPosition : String,
+                    var FirstName : String,
+                    var LastName : String,
+                    var ShortenedName : String,
+                    var Team : String)
