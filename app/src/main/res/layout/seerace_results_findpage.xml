@@ -65,7 +65,7 @@
         app:layout_constraintTop_toBottomOf="@+id/dividerline" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/yearRace_Input"
         android:layout_width="250dp"
         android:layout_height="57dp"
         android:layout_marginTop="48dp"
@@ -91,7 +91,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/yearRace_Input" />
 
     <Button
         android:id="@+id/btnFindRace"

@@ -13,7 +13,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="102dp"
-        android:background="#040404">
+        android:background="#323232">
 
         <ImageView
             android:id="@+id/recyclerImage"
