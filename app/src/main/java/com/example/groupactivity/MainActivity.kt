@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         var dataList = arrayListOf<User_Accounts>()
 
-        var buttonLogin = findViewById<Button>(R.id.button)
+        var buttonLogin = findViewById<Button>(R.id.buttonlogin)
 
         var editUsername = findViewById<EditText>(R.id.editUsername)
         var editPassword = findViewById<EditText>(R.id.editPassword)
