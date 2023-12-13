@@ -22,6 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainMenu_User"></activity>
+        <activity android:name=".MainMenu_Admin"></activity>
     </application>
 
 </manifest>

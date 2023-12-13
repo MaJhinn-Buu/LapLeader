@@ -22,7 +22,7 @@ class MainMenu_Admin : AppCompatActivity() {
         var backBtn :ImageButton = findViewById(R.id.ADMINbackbutton)
 
         //We'll Replace The Values Below Using The Database Value For Logo
-        imageList= arrayOf(R.drawable.ic_launcher_background, R.drawable.ic_launcher_background, R.drawable.ic_launcher_background, R.drawable.ic_launcher_background)
+        imageList= arrayOf(R.drawable.ferrarilogo, R.drawable.mercedeslogo, R.drawable.mclarenlogo, R.drawable.astonmartinlogo)
         titleList = arrayOf("Numero Uno", "Numero Dos", "Numero Tres", "Numero Quatro")
 
         recyclerView = findViewById(R.id.MMLeaderboard_Admin)
