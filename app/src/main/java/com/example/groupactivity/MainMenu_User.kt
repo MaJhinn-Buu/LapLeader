@@ -14,8 +14,6 @@ class MainMenu_User : AppCompatActivity() {
     lateinit var dataList: ArrayList<DataClass>
     lateinit var imageList: Array<Int>
     lateinit var titleList: Array<String>
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
