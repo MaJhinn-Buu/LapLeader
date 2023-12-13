@@ -7,6 +7,14 @@
     android:background="#040404"
     android:backgroundTint="#040404">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
     <View
         android:id="@+id/dividerline"
         android:layout_width="match_parent"
@@ -33,25 +41,25 @@
         app:layout_constraintVertical_bias="0.892"
         app:srcCompat="@drawable/backbutton" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="116dp"
-        android:fontFamily="@font/museomoderno_medium"
-        android:includeFontPadding="true"
-        android:text="LapLeader"
-        android:textColor="#FFFFFF"
-        android:textSize="31sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/dividerline"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.391"
-        app:layout_constraintStart_toEndOf="@+id/USERbackbutton"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.615" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="128dp"
+                android:fontFamily="@font/museomoderno_medium"
+                android:includeFontPadding="true"
+                android:text="LapLeader"
+                android:textColor="#FFFFFF"
+                android:textSize="31sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/dividerline"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.391"
+                app:layout_constraintStart_toEndOf="@+id/USERbackbutton"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
 
-    <TextView
+            <TextView
         android:id="@+id/GPTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -565,5 +573,8 @@
         android:textSize="21sp"
         app:layout_constraintBottom_toTopOf="@+id/NewLineDiv07"
         app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -27,7 +27,8 @@
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
-        android:textColorHint="#3A3A3A"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#434141"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editUsername" />
@@ -41,7 +42,8 @@
         android:ems="10"
         android:hint="Username"
         android:inputType="text"
-        android:textColorHint="#3A3A3A"
+        android:textColor="#F4F4F4"
+        android:textColorHint="#434141"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />

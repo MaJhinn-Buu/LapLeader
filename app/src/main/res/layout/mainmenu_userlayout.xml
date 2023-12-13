@@ -81,7 +81,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="179dp"
         android:backgroundTint="#00BF63"
-        android:text="Race Results"
+        android:text="See Standings"
         app:cornerRadius="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
