@@ -23,6 +23,9 @@
         </activity>
         <activity android:name=".MainMenu_User"></activity>
         <activity android:name=".MainMenu_Admin"></activity>
+        <activity android:name=".AddRaceResultPage"></activity>
+        <activity android:name=".EditRaceFindPage"></activity>
+        <activity android:name=".EditDriversCupPage"></activity>
     </application>
 
 </manifest>

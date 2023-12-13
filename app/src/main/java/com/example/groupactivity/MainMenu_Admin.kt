@@ -3,6 +3,7 @@ package com.example.groupactivity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Toast
@@ -19,7 +20,11 @@ class MainMenu_Admin : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.mainmenu_adminlayout)
+
         var backBtn :ImageButton = findViewById(R.id.ADMINbackbutton)
+        var addRaceRes : Button = findViewById(R.id.btnAddRaceRes)
+        var edtRaceRes : Button = findViewById(R.id.btnEdtRaceRes)
+        var edtStand : Button = findViewById(R.id.btnEdtStands)
 
         //We'll Replace The Values Below Using The Database Value For Logo
         imageList= arrayOf(R.drawable.ferrarilogo, R.drawable.mercedeslogo, R.drawable.mclarenlogo, R.drawable.astonmartinlogo)
@@ -37,7 +42,39 @@ class MainMenu_Admin : AppCompatActivity() {
             try {
                 var logIntent = Intent(this, MainActivity::class.java)
                 startActivity(logIntent)
-            } catch (e: Exception) {
+            }
+            catch (e: Exception) {
+
+            }
+        }
+
+        addRaceRes.setOnClickListener {
+            //This is for redirecting to add race results page
+            try {
+                var addRaceIntent = Intent(this, AddRaceResultPage::class.java)
+                startActivity(addRaceIntent)
+            }
+            catch (e: Exception) {
+
+            }
+        }
+
+        edtRaceRes.setOnClickListener {
+            try {
+                var edtRaceIntent = Intent(this, EditRaceFindPage::class.java)
+                startActivity(edtRaceIntent)
+            }
+            catch (e: Exception) {
+
+            }
+        }
+
+        edtStand.setOnClickListener {
+            try {
+                var edtStandIntent = Intent(this, EditDriversCupPage::class.java)
+                startActivity(edtStandIntent)
+            }
+            catch (e: Exception) {
 
             }
         }
