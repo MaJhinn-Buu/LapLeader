@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginVertical="10dp"
+    android:layout_marginHorizontal="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="#323232">
+
+        <ImageView
+            android:id="@+id/recyclerImage003"
+            android:layout_width="102dp"
+            android:layout_height="86dp"
+            android:layout_marginStart="32dp"
+            android:adjustViewBounds="true"
+            android:padding="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/f1logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.25" />
+
+        <TextView
+            android:id="@+id/raceNameTitle002"
+            android:layout_width="176dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="44dp"
+            android:foregroundTint="#FFFFFF"
+            android:gravity="center"
+            android:text="Race Name"
+            android:textColor="#FBF9F9"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/recyclerImage003"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/raceYearTitle002"
+            android:layout_width="200dp"
+            android:layout_height="21dp"
+            android:gravity="center"
+            android:text="2069"
+            android:textColor="#989898"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.62"
+            app:layout_constraintStart_toEndOf="@+id/recyclerImage003"
+            app:layout_constraintTop_toBottomOf="@+id/raceNameTitle002"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/edtRaceResult_Btn_VIEW"
+            android:layout_width="220dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#00BF63"
+            android:text="See Results"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
