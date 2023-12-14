@@ -61,7 +61,7 @@ class MainMenu_Admin : AppCompatActivity() {
 
         edtRaceRes.setOnClickListener {
             try {
-                var edtRaceIntent = Intent(this, EditRaceFindPage::class.java)
+                var edtRaceIntent = Intent(this, EditRaceMainPage::class.java)
                 startActivity(edtRaceIntent)
             }
             catch (e: Exception) {

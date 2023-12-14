@@ -75,6 +75,9 @@ class MainActivity : AppCompatActivity() {
                                 startActivity(intent)
                             }
                         }
+                        else{
+                           Toast.makeText(this, "Username or Password is incorrect!",Toast.LENGTH_SHORT).show()
+                        }
                     }
 
 

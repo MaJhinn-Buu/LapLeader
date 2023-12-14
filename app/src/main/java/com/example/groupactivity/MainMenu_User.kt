@@ -1,7 +1,10 @@
 package com.example.groupactivity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -21,6 +24,10 @@ class MainMenu_User : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.mainmenu_userlayout)
 
+        var backBtn : ImageButton = findViewById(R.id.USERbackbutton)
+        var seeRaceRes : Button = findViewById(R.id.btnSeeRaceRes)
+        var seeStand : Button = findViewById(R.id.btnSeeStands)
+
         //We'll Replace The Values Below Using The Database Value For Logo
         imageList= arrayOf(R.drawable.ic_launcher_background, R.drawable.ic_launcher_background, R.drawable.ic_launcher_background, R.drawable.ic_launcher_background)
         titleList = arrayOf("Numero Uno", "Numero Dos", "Numero Tres", "Numero Quatro")
@@ -30,6 +37,28 @@ class MainMenu_User : AppCompatActivity() {
         recyclerView.setHasFixedSize(false)
         dataList = arrayListOf<DataClass>()
         getData()
+
+        backBtn.setOnClickListener {
+            //This is to return to Login Page
+            try {
+                var logIntent = Intent(this, MainActivity::class.java)
+                startActivity(logIntent)
+            }
+            catch (e: Exception) {
+
+            }
+        }
+
+        seeRaceRes.setOnClickListener {
+            //This is tp redirect to race find page
+            try {
+                var RaceResIntent = Intent(this, SeeRaceFindPage::class.java)
+                startActivity(RaceResIntent)
+            }
+            catch (e: Exception) {
+
+            }
+        }
     }
 
     private fun getData() {
