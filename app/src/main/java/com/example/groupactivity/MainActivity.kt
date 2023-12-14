@@ -11,12 +11,9 @@ import androidx.core.graphics.convertTo
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
-
 class MainActivity : AppCompatActivity() {
     //This is for Login
-
     lateinit var databaseReference: DatabaseReference
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -29,15 +26,8 @@ class MainActivity : AppCompatActivity() {
         var editPassword = findViewById<EditText>(R.id.editPassword)
 
         databaseReference = FirebaseDatabase.getInstance().getReference("FirebaseDatabase")
-//        var userDetails = User_Accounts("Patrick", "420", 0)
-//        var dataKey = databaseReference.push().getKey()
-//       databaseReference.child("Users").child(dataKey.toString()).setValue(userDetails)
-//           .addOnSuccessListener {
-//                Toast.makeText(this, "Success - ADD", Toast.LENGTH_SHORT).show()
-//            }
 
         buttonLogin.setOnClickListener {
-
             databaseReference.child("Users").get().addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     val snapshot = task.result
@@ -53,7 +43,6 @@ class MainActivity : AppCompatActivity() {
                         )
                         dataList.add(dc)
                     }
-
 
                     val inputUsername = editUsername.text.toString()
                     val inputPassword = editPassword.text.toString()
@@ -84,4 +73,3 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
-

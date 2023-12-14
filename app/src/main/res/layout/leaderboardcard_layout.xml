@@ -29,7 +29,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/recyclerTitle"
+            android:id="@+id/raceNameTitle"
             android:layout_width="241dp"
             android:layout_height="26dp"
             android:layout_marginStart="40dp"
@@ -53,7 +53,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.535"
             app:layout_constraintStart_toEndOf="@+id/TeamLogo"
-            app:layout_constraintTop_toBottomOf="@+id/recyclerTitle"
+            app:layout_constraintTop_toBottomOf="@+id/raceNameTitle"
             app:layout_constraintVertical_bias="0.0" />
 
 

@@ -5,7 +5,6 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.ViewHolder
 
 class AdapterClass(var dataList : ArrayList<DataClass>) : RecyclerView.Adapter<AdapterClass.ViewHolderClass>() {
 
@@ -27,6 +26,6 @@ class AdapterClass(var dataList : ArrayList<DataClass>) : RecyclerView.Adapter<A
 
     class ViewHolderClass(itemView : View) : RecyclerView.ViewHolder(itemView) {
         var rvImage : ImageView = itemView.findViewById(R.id.TeamLogo)
-        var rvTitle : TextView = itemView.findViewById(R.id.recyclerTitle)
+        var rvTitle : TextView = itemView.findViewById(R.id.raceNameTitle)
     }
 }
