@@ -10,37 +10,39 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-178dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-    <View
-        android:id="@+id/ADMINdividerline"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="76dp"
-        android:background="#5271FF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:id="@+id/ADMINdividerline"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="76dp"
+                android:background="#5271FF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/ADDRRbackbutton"
-        android:layout_width="33dp"
-        android:layout_height="28dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginBottom="20dp"
-        android:adjustViewBounds="true"
-        android:background="#00FFFFFF"
-        android:scaleType="centerInside"
-        app:layout_constraintBottom_toTopOf="@+id/ADMINdividerline"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.892"
-        app:srcCompat="@drawable/backbutton" />
+            <ImageButton
+                android:id="@+id/ADDRRbackbutton"
+                android:layout_width="33dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="20dp"
+                android:adjustViewBounds="true"
+                android:background="#00FFFFFF"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toTopOf="@+id/ADMINdividerline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.892"
+                app:srcCompat="@drawable/backbutton" />
 
             <TextView
                 android:id="@+id/AdminLogo"
@@ -60,49 +62,49 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="176dp"
-        android:layout_marginEnd="177dp"
-        android:layout_marginBottom="2dp"
-        android:fontFamily="@font/glacial_indifference_bold"
-        android:text=" ADMIN PAGE"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/ADMINdividerline"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AdminLogo" />
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:layout_marginEnd="177dp"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/glacial_indifference_bold"
+                android:text=" ADMIN PAGE"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toTopOf="@+id/ADMINdividerline"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/AdminLogo" />
 
-    <TextView
-        android:id="@+id/textViewofARR"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:fontFamily="@font/glacial_indifference_bold"
-        android:text="ADD RACE RESULT"
-        android:textColor="#FFFFFF"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ADMINdividerline" />
+            <TextView
+                android:id="@+id/textViewofARR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/glacial_indifference_bold"
+                android:text="ADD RACE RESULT"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ADMINdividerline" />
 
-    <EditText
-        android:id="@+id/YearAdd"
-        android:layout_width="275dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="80dp"
-        android:backgroundTint="#5271FF"
-        android:ems="10"
-        android:hint="20xx"
-        android:inputType="text"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#A6A6A6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewofARR" />
+            <EditText
+                android:id="@+id/YearAdd"
+                android:layout_width="275dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="80dp"
+                android:backgroundTint="#5271FF"
+                android:ems="10"
+                android:hint="20xx"
+                android:inputType="text"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#A6A6A6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewofARR" />
 
             <TextView
                 android:id="@+id/textView8"
@@ -123,20 +125,20 @@
                 app:layout_constraintVertical_bias="1.0" />
 
             <EditText
-        android:id="@+id/DateAdd"
-        android:layout_width="275dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="52dp"
-        android:backgroundTint="#5271FF"
-        android:ems="10"
-        android:hint="mm/dd/yyyy"
-        android:inputType="text"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#A6A6A6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/YearAdd" />
+                android:id="@+id/DateAdd"
+                android:layout_width="275dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="52dp"
+                android:backgroundTint="#5271FF"
+                android:ems="10"
+                android:hint="mm/dd/yyyy"
+                android:inputType="text"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#A6A6A6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/YearAdd" />
 
             <TextView
                 android:id="@+id/textView51"
@@ -157,20 +159,20 @@
                 app:layout_constraintVertical_bias="1.0" />
 
             <EditText
-        android:id="@+id/LapAdd"
-        android:layout_width="275dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="52dp"
-        android:backgroundTint="#5271FF"
-        android:ems="10"
-        android:hint="60 | 55"
-        android:inputType="text"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#A6A6A6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DateAdd" />
+                android:id="@+id/LapAdd"
+                android:layout_width="275dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="52dp"
+                android:backgroundTint="#5271FF"
+                android:ems="10"
+                android:hint="60 | 55"
+                android:inputType="text"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#A6A6A6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/DateAdd" />
 
             <TextView
                 android:id="@+id/textView52"
@@ -209,527 +211,527 @@
                 app:layout_constraintVertical_bias="1.0" />
 
             <EditText
-        android:id="@+id/LocationAdd"
-        android:layout_width="275dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="52dp"
-        android:backgroundTint="#5271FF"
-        android:ems="10"
-        android:hint="Monaco | Singapore | Las Vegas"
-        android:inputType="text"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#A6A6A6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LapAdd" />
+                android:id="@+id/LocationAdd"
+                android:layout_width="275dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="52dp"
+                android:backgroundTint="#5271FF"
+                android:ems="10"
+                android:hint="Monaco | Singapore | Las Vegas"
+                android:inputType="text"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#A6A6A6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LapAdd" />
 
-    <View
-        android:id="@+id/ARRLineDiv01"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="144dp"
-        android:background="#8C52FF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/LocationAdd" />
+            <View
+                android:id="@+id/ARRLineDiv01"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="144dp"
+                android:background="#8C52FF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/LocationAdd" />
 
-    <TextView
-        android:id="@+id/textView101"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="18dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/dmsans_variablefont"
-        android:text="01"
-        android:textColor="#FFFFFF"
-        android:textSize="21sp"
-        app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv01"
-        app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/textView101"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/dmsans_variablefont"
+                android:text="01"
+                android:textColor="#FFFFFF"
+                android:textSize="21sp"
+                app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv01"
+                app:layout_constraintStart_toStartOf="parent" />
 
-    <Spinner
-        android:id="@+id/P1Driver_ARR"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="12dp"
-        android:backgroundTint="#FFFCFC"
-        app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv01"
-        app:layout_constraintEnd_toStartOf="@+id/P1Const_ARR"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView101" />
+            <Spinner
+                android:id="@+id/P1Driver_ARR"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#FFFCFC"
+                app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv01"
+                app:layout_constraintEnd_toStartOf="@+id/P1Const_ARR"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/textView101" />
 
-    <Spinner
-        android:id="@+id/P1Const_ARR"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="12dp"
-        android:backgroundTint="#FFFCFC"
-        app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv01"
-        app:layout_constraintEnd_toEndOf="parent" />
+            <Spinner
+                android:id="@+id/P1Const_ARR"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#FFFCFC"
+                app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv01"
+                app:layout_constraintEnd_toEndOf="parent" />
 
-    <TextView
-        android:id="@+id/textView12123"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="108dp"
-        android:layout_marginEnd="124dp"
-        android:layout_marginBottom="24dp"
-        android:fontFamily="@font/dmsans_variablefont"
-        android:text="Driver"
-        android:textColor="#6BA6DF"
-        app:layout_constraintBottom_toTopOf="@+id/P1Driver_ARR"
-        app:layout_constraintEnd_toStartOf="@+id/textView112312232"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/textView12123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="108dp"
+                android:layout_marginEnd="124dp"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/dmsans_variablefont"
+                android:text="Driver"
+                android:textColor="#6BA6DF"
+                app:layout_constraintBottom_toTopOf="@+id/P1Driver_ARR"
+                app:layout_constraintEnd_toStartOf="@+id/textView112312232"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/textView112312232"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="24dp"
-        android:text="Team"
-        android:textColor="#6BA6DF"
-        app:layout_constraintBottom_toTopOf="@+id/P1Const_ARR"
-        app:layout_constraintEnd_toEndOf="parent" />
+            <TextView
+                android:id="@+id/textView112312232"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="80dp"
+                android:layout_marginBottom="24dp"
+                android:text="Team"
+                android:textColor="#6BA6DF"
+                app:layout_constraintBottom_toTopOf="@+id/P1Const_ARR"
+                app:layout_constraintEnd_toEndOf="parent" />
 
-    <Spinner
-        android:id="@+id/P2Driver_ARR"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="12dp"
-        android:backgroundTint="#FFFCFC"
-        app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv02"
-        app:layout_constraintEnd_toStartOf="@+id/P2Const_ARR"
-        app:layout_constraintHorizontal_bias="0.046"
-        app:layout_constraintStart_toEndOf="@+id/textView102" />
+            <Spinner
+                android:id="@+id/P2Driver_ARR"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#FFFCFC"
+                app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv02"
+                app:layout_constraintEnd_toStartOf="@+id/P2Const_ARR"
+                app:layout_constraintHorizontal_bias="0.046"
+                app:layout_constraintStart_toEndOf="@+id/textView102" />
 
-    <TextView
-        android:id="@+id/textView102"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/dmsans_variablefont"
-        android:text="02"
-        android:textColor="#FFFFFF"
-        android:textSize="21sp"
-        app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv02"
-        app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/textView102"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/dmsans_variablefont"
+                android:text="02"
+                android:textColor="#FFFFFF"
+                android:textSize="21sp"
+                app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv02"
+                app:layout_constraintStart_toStartOf="parent" />
 
-    <Spinner
-        android:id="@+id/P2Const_ARR"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="12dp"
-        android:backgroundTint="#FFFCFC"
-        app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv02"
-        app:layout_constraintEnd_toEndOf="parent" />
+            <Spinner
+                android:id="@+id/P2Const_ARR"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#FFFCFC"
+                app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv02"
+                app:layout_constraintEnd_toEndOf="parent" />
 
-    <View
-        android:id="@+id/ARRLineDiv02"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="84dp"
-        android:background="#8C52FF"
-        android:clickable="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ARRLineDiv01" />
+            <View
+                android:id="@+id/ARRLineDiv02"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="84dp"
+                android:background="#8C52FF"
+                android:clickable="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ARRLineDiv01" />
 
-    <Spinner
-        android:id="@+id/P3Driver_ARR"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="12dp"
-        android:backgroundTint="#FFFCFC"
-        app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv03"
-        app:layout_constraintEnd_toStartOf="@+id/P3Const_ARR"
-        app:layout_constraintHorizontal_bias="0.046"
-        app:layout_constraintStart_toEndOf="@+id/textView103" />
+            <Spinner
+                android:id="@+id/P3Driver_ARR"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#FFFCFC"
+                app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv03"
+                app:layout_constraintEnd_toStartOf="@+id/P3Const_ARR"
+                app:layout_constraintHorizontal_bias="0.046"
+                app:layout_constraintStart_toEndOf="@+id/textView103" />
 
-    <TextView
-        android:id="@+id/textView103"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/dmsans_variablefont"
-        android:text="03"
-        android:textColor="#FFFFFF"
-        android:textSize="21sp"
-        app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv03"
-        app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/textView103"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/dmsans_variablefont"
+                android:text="03"
+                android:textColor="#FFFFFF"
+                android:textSize="21sp"
+                app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv03"
+                app:layout_constraintStart_toStartOf="parent" />
 
-    <Spinner
-        android:id="@+id/P3Const_ARR"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="12dp"
-        android:backgroundTint="#FFFCFC"
-        app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv03"
-        app:layout_constraintEnd_toEndOf="parent" />
+            <Spinner
+                android:id="@+id/P3Const_ARR"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#FFFCFC"
+                app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv03"
+                app:layout_constraintEnd_toEndOf="parent" />
 
-    <View
-        android:id="@+id/ARRLineDiv03"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="84dp"
-        android:background="#8C52FF"
-        android:clickable="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ARRLineDiv02" />
+            <View
+                android:id="@+id/ARRLineDiv03"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="84dp"
+                android:background="#8C52FF"
+                android:clickable="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ARRLineDiv02" />
 
-    <Spinner
-        android:id="@+id/P4Driver_ARR"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="12dp"
-        android:backgroundTint="#FFFCFC"
-        app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv04"
-        app:layout_constraintEnd_toStartOf="@+id/P4Const_ARR"
-        app:layout_constraintHorizontal_bias="0.046"
-        app:layout_constraintStart_toEndOf="@+id/textView104" />
+            <Spinner
+                android:id="@+id/P4Driver_ARR"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#FFFCFC"
+                app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv04"
+                app:layout_constraintEnd_toStartOf="@+id/P4Const_ARR"
+                app:layout_constraintHorizontal_bias="0.046"
+                app:layout_constraintStart_toEndOf="@+id/textView104" />
 
-    <TextView
-        android:id="@+id/textView104"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/dmsans_variablefont"
-        android:text="04"
-        android:textColor="#FFFFFF"
-        android:textSize="21sp"
-        app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv04"
-        app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/textView104"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/dmsans_variablefont"
+                android:text="04"
+                android:textColor="#FFFFFF"
+                android:textSize="21sp"
+                app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv04"
+                app:layout_constraintStart_toStartOf="parent" />
 
-    <Spinner
-        android:id="@+id/P4Const_ARR"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="12dp"
-        android:backgroundTint="#FFFCFC"
-        app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv04"
-        app:layout_constraintEnd_toEndOf="parent" />
+            <Spinner
+                android:id="@+id/P4Const_ARR"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#FFFCFC"
+                app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv04"
+                app:layout_constraintEnd_toEndOf="parent" />
 
-    <View
-        android:id="@+id/ARRLineDiv04"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="84dp"
-        android:background="#00BF63"
-        android:clickable="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ARRLineDiv03" />
+            <View
+                android:id="@+id/ARRLineDiv04"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="84dp"
+                android:background="#00BF63"
+                android:clickable="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ARRLineDiv03" />
 
-    <Spinner
-        android:id="@+id/P5Driver_ARR"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="12dp"
-        android:backgroundTint="#FFFCFC"
-        app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv05"
-        app:layout_constraintEnd_toStartOf="@+id/P5Const_ARR"
-        app:layout_constraintHorizontal_bias="0.046"
-        app:layout_constraintStart_toEndOf="@+id/textView105" />
+            <Spinner
+                android:id="@+id/P5Driver_ARR"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#FFFCFC"
+                app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv05"
+                app:layout_constraintEnd_toStartOf="@+id/P5Const_ARR"
+                app:layout_constraintHorizontal_bias="0.046"
+                app:layout_constraintStart_toEndOf="@+id/textView105" />
 
-    <TextView
-        android:id="@+id/textView105"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/dmsans_variablefont"
-        android:text="05"
-        android:textColor="#FFFFFF"
-        android:textSize="21sp"
-        app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv05"
-        app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/textView105"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/dmsans_variablefont"
+                android:text="05"
+                android:textColor="#FFFFFF"
+                android:textSize="21sp"
+                app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv05"
+                app:layout_constraintStart_toStartOf="parent" />
 
-    <Spinner
-        android:id="@+id/P5Const_ARR"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="12dp"
-        android:backgroundTint="#FFFCFC"
-        app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv05"
-        app:layout_constraintEnd_toEndOf="parent" />
+            <Spinner
+                android:id="@+id/P5Const_ARR"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#FFFCFC"
+                app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv05"
+                app:layout_constraintEnd_toEndOf="parent" />
 
-    <View
-        android:id="@+id/ARRLineDiv05"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="84dp"
-        android:background="#00BF63"
-        android:clickable="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ARRLineDiv04" />
+            <View
+                android:id="@+id/ARRLineDiv05"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="84dp"
+                android:background="#00BF63"
+                android:clickable="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ARRLineDiv04" />
 
-    <Spinner
-        android:id="@+id/P6Driver_ARR"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="12dp"
-        android:backgroundTint="#FFFCFC"
-        app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv06"
-        app:layout_constraintEnd_toStartOf="@+id/P6Const_ARR"
-        app:layout_constraintHorizontal_bias="0.046"
-        app:layout_constraintStart_toEndOf="@+id/textView105" />
+            <Spinner
+                android:id="@+id/P6Driver_ARR"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#FFFCFC"
+                app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv06"
+                app:layout_constraintEnd_toStartOf="@+id/P6Const_ARR"
+                app:layout_constraintHorizontal_bias="0.046"
+                app:layout_constraintStart_toEndOf="@+id/textView105" />
 
-    <TextView
-        android:id="@+id/textView106"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/dmsans_variablefont"
-        android:text="06"
-        android:textColor="#FFFFFF"
-        android:textSize="21sp"
-        app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv06"
-        app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/textView106"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/dmsans_variablefont"
+                android:text="06"
+                android:textColor="#FFFFFF"
+                android:textSize="21sp"
+                app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv06"
+                app:layout_constraintStart_toStartOf="parent" />
 
-    <Spinner
-        android:id="@+id/P6Const_ARR"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="12dp"
-        android:backgroundTint="#FFFCFC"
-        app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv06"
-        app:layout_constraintEnd_toEndOf="parent" />
+            <Spinner
+                android:id="@+id/P6Const_ARR"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#FFFCFC"
+                app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv06"
+                app:layout_constraintEnd_toEndOf="parent" />
 
-    <View
-        android:id="@+id/ARRLineDiv06"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="84dp"
-        android:background="#00BF63"
-        android:clickable="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ARRLineDiv05" />
+            <View
+                android:id="@+id/ARRLineDiv06"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="84dp"
+                android:background="#00BF63"
+                android:clickable="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ARRLineDiv05" />
 
-    <Spinner
-        android:id="@+id/P7Driver_ARR"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="12dp"
-        android:backgroundTint="#FFFCFC"
-        app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv07"
-        app:layout_constraintEnd_toStartOf="@+id/P7Const_ARR"
-        app:layout_constraintHorizontal_bias="0.046"
-        app:layout_constraintStart_toEndOf="@+id/textView107" />
+            <Spinner
+                android:id="@+id/P7Driver_ARR"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#FFFCFC"
+                app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv07"
+                app:layout_constraintEnd_toStartOf="@+id/P7Const_ARR"
+                app:layout_constraintHorizontal_bias="0.046"
+                app:layout_constraintStart_toEndOf="@+id/textView107" />
 
-    <TextView
-        android:id="@+id/textView107"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/dmsans_variablefont"
-        android:text="07"
-        android:textColor="#FFFFFF"
-        android:textSize="21sp"
-        app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv07"
-        app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/textView107"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/dmsans_variablefont"
+                android:text="07"
+                android:textColor="#FFFFFF"
+                android:textSize="21sp"
+                app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv07"
+                app:layout_constraintStart_toStartOf="parent" />
 
-    <Spinner
-        android:id="@+id/P7Const_ARR"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="12dp"
-        android:backgroundTint="#FFFCFC"
-        app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv07"
-        app:layout_constraintEnd_toEndOf="parent" />
+            <Spinner
+                android:id="@+id/P7Const_ARR"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#FFFCFC"
+                app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv07"
+                app:layout_constraintEnd_toEndOf="parent" />
 
-    <View
-        android:id="@+id/ARRLineDiv07"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="84dp"
-        android:background="#00BF63"
-        android:clickable="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ARRLineDiv06" />
+            <View
+                android:id="@+id/ARRLineDiv07"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="84dp"
+                android:background="#00BF63"
+                android:clickable="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ARRLineDiv06" />
 
-    <Spinner
-        android:id="@+id/P8Driver_ARR"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="12dp"
-        android:backgroundTint="#FFFCFC"
-        app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv08"
-        app:layout_constraintEnd_toStartOf="@+id/P8Const_ARR"
-        app:layout_constraintHorizontal_bias="0.046"
-        app:layout_constraintStart_toEndOf="@+id/textView108" />
+            <Spinner
+                android:id="@+id/P8Driver_ARR"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#FFFCFC"
+                app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv08"
+                app:layout_constraintEnd_toStartOf="@+id/P8Const_ARR"
+                app:layout_constraintHorizontal_bias="0.046"
+                app:layout_constraintStart_toEndOf="@+id/textView108" />
 
-    <TextView
-        android:id="@+id/textView108"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/dmsans_variablefont"
-        android:text="08"
-        android:textColor="#FFFFFF"
-        android:textSize="21sp"
-        app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv08"
-        app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/textView108"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/dmsans_variablefont"
+                android:text="08"
+                android:textColor="#FFFFFF"
+                android:textSize="21sp"
+                app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv08"
+                app:layout_constraintStart_toStartOf="parent" />
 
-    <Spinner
-        android:id="@+id/P8Const_ARR"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="12dp"
-        android:backgroundTint="#FFFCFC"
-        app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv08"
-        app:layout_constraintEnd_toEndOf="parent" />
+            <Spinner
+                android:id="@+id/P8Const_ARR"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#FFFCFC"
+                app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv08"
+                app:layout_constraintEnd_toEndOf="parent" />
 
-    <View
-        android:id="@+id/ARRLineDiv08"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="84dp"
-        android:background="#00BF63"
-        android:clickable="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ARRLineDiv07" />
+            <View
+                android:id="@+id/ARRLineDiv08"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="84dp"
+                android:background="#00BF63"
+                android:clickable="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ARRLineDiv07" />
 
-    <Spinner
-        android:id="@+id/P9Driver_ARR"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="12dp"
-        android:backgroundTint="#FFFCFC"
-        app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv09"
-        app:layout_constraintEnd_toStartOf="@+id/P9Const_ARR"
-        app:layout_constraintHorizontal_bias="0.046"
-        app:layout_constraintStart_toEndOf="@+id/textView109" />
+            <Spinner
+                android:id="@+id/P9Driver_ARR"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#FFFCFC"
+                app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv09"
+                app:layout_constraintEnd_toStartOf="@+id/P9Const_ARR"
+                app:layout_constraintHorizontal_bias="0.046"
+                app:layout_constraintStart_toEndOf="@+id/textView109" />
 
-    <TextView
-        android:id="@+id/textView109"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/dmsans_variablefont"
-        android:text="09"
-        android:textColor="#FFFFFF"
-        android:textSize="21sp"
-        app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv09"
-        app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/textView109"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/dmsans_variablefont"
+                android:text="09"
+                android:textColor="#FFFFFF"
+                android:textSize="21sp"
+                app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv09"
+                app:layout_constraintStart_toStartOf="parent" />
 
-    <Spinner
-        android:id="@+id/P9Const_ARR"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="12dp"
-        android:backgroundTint="#FFFCFC"
-        app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv09"
-        app:layout_constraintEnd_toEndOf="parent" />
+            <Spinner
+                android:id="@+id/P9Const_ARR"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#FFFCFC"
+                app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv09"
+                app:layout_constraintEnd_toEndOf="parent" />
 
-    <View
-        android:id="@+id/ARRLineDiv09"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="84dp"
-        android:background="#E4C238"
-        android:clickable="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ARRLineDiv08" />
+            <View
+                android:id="@+id/ARRLineDiv09"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="84dp"
+                android:background="#E4C238"
+                android:clickable="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ARRLineDiv08" />
 
-    <Spinner
-        android:id="@+id/P10Driver_ARR"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="12dp"
-        android:backgroundTint="#FFFCFC"
-        app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv10"
-        app:layout_constraintEnd_toStartOf="@+id/P10Const_ARR"
-        app:layout_constraintHorizontal_bias="0.046"
-        app:layout_constraintStart_toEndOf="@+id/textView110" />
+            <Spinner
+                android:id="@+id/P10Driver_ARR"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#FFFCFC"
+                app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv10"
+                app:layout_constraintEnd_toStartOf="@+id/P10Const_ARR"
+                app:layout_constraintHorizontal_bias="0.046"
+                app:layout_constraintStart_toEndOf="@+id/textView110" />
 
-    <TextView
-        android:id="@+id/textView110"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/dmsans_variablefont"
-        android:text="10"
-        android:textColor="#FFFFFF"
-        android:textSize="21sp"
-        app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv10"
-        app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/textView110"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/dmsans_variablefont"
+                android:text="10"
+                android:textColor="#FFFFFF"
+                android:textSize="21sp"
+                app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv10"
+                app:layout_constraintStart_toStartOf="parent" />
 
-    <Spinner
-        android:id="@+id/P10Const_ARR"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="12dp"
-        android:backgroundTint="#FFFCFC"
-        app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv10"
-        app:layout_constraintEnd_toEndOf="parent" />
+            <Spinner
+                android:id="@+id/P10Const_ARR"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#FFFCFC"
+                app:layout_constraintBottom_toTopOf="@+id/ARRLineDiv10"
+                app:layout_constraintEnd_toEndOf="parent" />
 
-    <View
-        android:id="@+id/ARRLineDiv10"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="84dp"
-        android:background="#E4C238"
-        android:clickable="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ARRLineDiv09" />
+            <View
+                android:id="@+id/ARRLineDiv10"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="84dp"
+                android:background="#E4C238"
+                android:clickable="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ARRLineDiv09" />
 
-    <Button
-        android:id="@+id/btnAddRace"
-        android:layout_width="120dp"
-        android:layout_height="41dp"
-        android:backgroundTint="#00BF63"
-        android:text="Add Race"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ARRLineDiv10"
-        app:layout_constraintVertical_bias="0.455" />
+            <Button
+                android:id="@+id/btnAddRace"
+                android:layout_width="120dp"
+                android:layout_height="41dp"
+                android:backgroundTint="#00BF63"
+                android:text="Add Race"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ARRLineDiv10"
+                app:layout_constraintVertical_bias="0.455" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

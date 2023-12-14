@@ -56,13 +56,16 @@ class MainActivity : AppCompatActivity() {
                             Log.i("testing_forever", user?.Privilege.toString())
                             if (user?.Privilege == 1) {
                                 // User has privilege 1 (admin)
-                                val intent = Intent(this, MainMenu_User::class.java)
+                                val intent = Intent(this, MainMenu_Admin::class.java)
                                 startActivity(intent)
                             } else if (user?.Privilege == 0){
                                 // User has other privileges (you might want to handle this case separately)
-                                val intent = Intent(this, MainActivity::class.java)
+                                val intent = Intent(this, MainMenu_User::class.java)
                                 startActivity(intent)
                             }
+                        }
+                        else{
+                           Toast.makeText(this, "Username or Password is incorrect!",Toast.LENGTH_SHORT).show()
                         }
                     }
 
