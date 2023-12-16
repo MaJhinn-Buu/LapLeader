@@ -11,16 +11,18 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
 class EditDriversCupPage : AppCompatActivity() {
-    lateinit var databaseReference : DatabaseReference
+    lateinit var databaseReference: DatabaseReference
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.edtstandings_driverscup)
-        val edtStanding : Button = findViewById(R.id.btnEdtStandsDriver)
-        val backBtn : ImageButton = findViewById(R.id.ESFDbackbutton)
+
+        val edtStanding: Button = findViewById(R.id.btnEdtStandsDriver)
+        val backBtn: ImageButton = findViewById(R.id.ESFDbackbutton)
 
         databaseReference = FirebaseDatabase.getInstance().getReference("FirebaseDatabase")
 
-        //Driver Names
+        // Driver Names
         val spinnerDriver1: Spinner = findViewById(R.id.P1Driver_ESD)
         val spinnerDriver2: Spinner = findViewById(R.id.P2Driver_ESD)
         val spinnerDriver3: Spinner = findViewById(R.id.P3Driver_ESD)
@@ -32,7 +34,7 @@ class EditDriversCupPage : AppCompatActivity() {
         val spinnerDriver9: Spinner = findViewById(R.id.P9Driver_ESD)
         val spinnerDriver10: Spinner = findViewById(R.id.P10Driver_ESD)
 
-        //Team names
+        // Team names
         val spinnerTeam1: Spinner = findViewById(R.id.P1Const_ESD)
         val spinnerTeam2: Spinner = findViewById(R.id.P2Const_ESD)
         val spinnerTeam3: Spinner = findViewById(R.id.P3Const_ESD)
@@ -44,7 +46,8 @@ class EditDriversCupPage : AppCompatActivity() {
         val spinnerTeam9: Spinner = findViewById(R.id.P9Const_ESD)
         val spinnerTeam10: Spinner = findViewById(R.id.P10Const_ESD)
 
-        val data1 = listOf("M. Verstappen",
+        val data1 = listOf(
+            "M. Verstappen",
             "S. Perez",
             "C. Leclerc",
             "C. Sainz",
@@ -53,29 +56,16 @@ class EditDriversCupPage : AppCompatActivity() {
             "L. Norris",
             "O. Piastri",
             "F. Alonso",
-            "L. Stroll")
-
-        val driverList : ArrayList<String> = arrayListOf("M. Verstappen",
-            "S. Perez",
-            "C. Leclerc",
-            "C. Sainz",
-            "L. Hamilton",
-            "G. Russell",
-            "L. Norris",
-            "O. Piastri",
-            "F. Alonso",
-            "L. Stroll")
-
+            "L. Stroll"
+        )
 
         val data2 = listOf("Red Bull", "Ferrari", "AMG Mercedes", "McLaren", "Aston Martin")
-
-        val teamList : ArrayList<String> = arrayListOf("Red Bull", "Ferrari", "AMG Mercedes", "McLaren", "Aston Martin")
 
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, data1)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
 
         val adapter2 = ArrayAdapter(this, android.R.layout.simple_spinner_item, data2)
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
 
         spinnerDriver1.adapter = adapter
         spinnerDriver2.adapter = adapter
@@ -99,20 +89,52 @@ class EditDriversCupPage : AppCompatActivity() {
         spinnerTeam9.adapter = adapter2
         spinnerTeam10.adapter = adapter2
 
-
         edtStanding.setOnClickListener {
-            val standings = Drivers(driverList, teamList)
+            // Creating StandingItem objects for each spinner selection
+            val standingItem1 = StandingItem(spinnerDriver1.selectedItem.toString(), spinnerTeam1.selectedItem.toString())
+            val standingItem2 = StandingItem(spinnerDriver2.selectedItem.toString(), spinnerTeam2.selectedItem.toString())
+            val standingItem3 = StandingItem(spinnerDriver3.selectedItem.toString(), spinnerTeam3.selectedItem.toString())
+            val standingItem4 = StandingItem(spinnerDriver4.selectedItem.toString(), spinnerTeam4.selectedItem.toString())
+            val standingItem5 = StandingItem(spinnerDriver5.selectedItem.toString(), spinnerTeam5.selectedItem.toString())
+            val standingItem6 = StandingItem(spinnerDriver6.selectedItem.toString(), spinnerTeam6.selectedItem.toString())
+            val standingItem7 = StandingItem(spinnerDriver7.selectedItem.toString(), spinnerTeam7.selectedItem.toString())
+            val standingItem8 = StandingItem(spinnerDriver8.selectedItem.toString(), spinnerTeam8.selectedItem.toString())
+            val standingItem9 = StandingItem(spinnerDriver9.selectedItem.toString(), spinnerTeam9.selectedItem.toString())
+            val standingItem10 = StandingItem(spinnerDriver10.selectedItem.toString(), spinnerTeam10.selectedItem.toString())
+
+            // Save standings with ID 1 and a list of StandingItem objects
+            val standingsMap = mapOf(
+                "1" to standingItem1,
+                "2" to standingItem2,
+                "3" to standingItem3,
+                "4" to standingItem4,
+                "5" to standingItem5,
+                "6" to standingItem6,
+                "7" to standingItem7,
+                "8" to standingItem8,
+                "9" to standingItem9,
+                "10" to standingItem10
+            )
+            databaseReference.child("Standings").setValue(standingsMap)
         }
 
         backBtn.setOnClickListener {
-            //This is to return to Login Page
+            // This is to return to Login Page
             try {
                 val logIntent = Intent(this, MainMenu_Admin::class.java)
                 startActivity(logIntent)
             } catch (e: Exception) {
-
+                e.printStackTrace()
             }
         }
-
     }
 }
+
+class Standings(
+    var standingsList: ArrayList<StandingItem> = arrayListOf()
+)
+
+data class StandingItem(
+    var driverName: String = "",
+    var teamName: String = ""
+)
