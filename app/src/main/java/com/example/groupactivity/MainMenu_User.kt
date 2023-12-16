@@ -3,6 +3,7 @@ package com.example.groupactivity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Toast
@@ -53,13 +54,13 @@ class MainMenu_User : AppCompatActivity() {
         }
 
         seeRaceRes.setOnClickListener {
-            //This is tp redirect to race find page
+            Log.d("MainMenu_User", "See Race Results button clicked")
+            // This is to redirect to race find page
             try {
                 var RaceResIntent = Intent(this, SeeRaceFindPage::class.java)
                 startActivity(RaceResIntent)
-            }
-            catch (e: Exception) {
-
+            } catch (e: Exception) {
+                Log.e("MainMenu_User", "Error starting SeeRaceFindPage", e)
             }
         }
     }

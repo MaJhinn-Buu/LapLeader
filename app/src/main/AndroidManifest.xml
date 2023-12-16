@@ -27,6 +27,8 @@
         <activity android:name=".EditRaceFindPage"></activity>
         <activity android:name=".EditDriversCupPage"></activity>
         <activity android:name=".EditRaceMainPage"></activity>
+        <activity android:name=".SeeRaceFindPage"></activity>
+        <activity android:name=".SeeRaceMainPage"></activity>
     </application>
 
 </manifest>
