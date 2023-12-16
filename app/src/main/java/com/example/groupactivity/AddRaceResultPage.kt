@@ -21,8 +21,8 @@ class AddRaceResultPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.addraceresult)
-        var backBtn : ImageButton = findViewById(R.id.ADDRRbackbutton)
-        var addRace : Button = findViewById(R.id.btnAddRace)
+        val backBtn : ImageButton = findViewById(R.id.ADDRRbackbutton)
+        val addRace : Button = findViewById(R.id.btnAddRace)
 
         databaseReference = FirebaseDatabase.getInstance().getReference("FirebaseDatabase")
 
@@ -61,21 +61,8 @@ class AddRaceResultPage : AppCompatActivity() {
             "Fernando Alonso",
             "Lance Stroll")
 
-        var driverList : ArrayList<String> = arrayListOf("Max Verstappen",
-            "Sergio Perez",
-            "Charles Leclerc",
-            "Carlos Sainz",
-            "Lewis Hamilton",
-            "George Russell",
-            "Lando Norris",
-            "Oscar Piastri",
-            "Fernando Alonso",
-            "Lance Stroll")
-
 
         val data2 = listOf("Red Bull", "Ferrari", "AMG Mercedes", "McLaren", "Aston Martin")
-
-        var teamList : ArrayList<String> = arrayListOf("Red Bull", "Ferrari", "AMG Mercedes", "McLaren", "Aston Martin")
 
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, data1)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
@@ -105,19 +92,40 @@ class AddRaceResultPage : AppCompatActivity() {
         spinnerTeam9.adapter = adapter2
         spinnerTeam10.adapter = adapter2
 
-        var raceYear : EditText = findViewById(R.id.YearAdd)
-        var raceDate : EditText = findViewById(R.id.DateAdd)
-        var raceLaps : EditText = findViewById(R.id.LapAdd)
-        var raceLoc : EditText = findViewById(R.id.LocationAdd)
+        val raceYear : EditText = findViewById(R.id.YearAdd)
+        val raceDate : EditText = findViewById(R.id.DateAdd)
+        val raceLaps : EditText = findViewById(R.id.LapAdd)
+        val raceLoc : EditText = findViewById(R.id.LocationAdd)
 
         addRace.setOnClickListener {
 
-            var raceDetails = Race_Results(raceYear.text.toString().toInt(),
+            // Map each driver to their respective team
+            val driverTeamMap = mapOf(
+                spinnerDriver1.selectedItem.toString() to spinnerTeam1.selectedItem.toString(),
+                spinnerDriver2.selectedItem.toString() to spinnerTeam2.selectedItem.toString(),
+                spinnerDriver3.selectedItem.toString() to spinnerTeam3.selectedItem.toString(),
+                spinnerDriver4.selectedItem.toString() to spinnerTeam4.selectedItem.toString(),
+                spinnerDriver5.selectedItem.toString() to spinnerTeam5.selectedItem.toString(),
+                spinnerDriver6.selectedItem.toString() to spinnerTeam6.selectedItem.toString(),
+                spinnerDriver7.selectedItem.toString() to spinnerTeam7.selectedItem.toString(),
+                spinnerDriver8.selectedItem.toString() to spinnerTeam8.selectedItem.toString(),
+                spinnerDriver9.selectedItem.toString() to spinnerTeam9.selectedItem.toString(),
+                spinnerDriver10.selectedItem.toString() to spinnerTeam10.selectedItem.toString()
+            )
+
+            // Populate driverList with drivers and their respective teams
+            val driverList = ArrayList<String>()
+            driverTeamMap.forEach { (driver, team) ->
+                driverList.add("$driver - $team")
+            }
+
+
+            val raceDetails = Race_Results(raceYear.text.toString().toInt(),
                                             raceDate.text.toString(),
                                             raceLoc.text.toString(),
                                             raceLaps.text.toString().toInt(),
-                                            driverList,
-                                            teamList)
+                                            driverList
+                                            )
 
             databaseReference.child("Race Results").addListenerForSingleValueEvent(object : ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {
@@ -134,13 +142,13 @@ class AddRaceResultPage : AppCompatActivity() {
                 }
 
             })
-                    Toast.makeText(this, "Success - ADD", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Success - ADD", Toast.LENGTH_LONG).show()
         }
 
         backBtn.setOnClickListener {
             //This is to return to Login Page
             try {
-                var logIntent = Intent(this, MainMenu_Admin::class.java)
+                val logIntent = Intent(this, MainMenu_Admin::class.java)
                 startActivity(logIntent)
             } catch (e: Exception) {
 

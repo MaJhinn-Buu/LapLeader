@@ -46,7 +46,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/raceYearTitle"
+            android:id="@+id/raceDateTitle"
             android:layout_width="200dp"
             android:layout_height="21dp"
             android:gravity="center"

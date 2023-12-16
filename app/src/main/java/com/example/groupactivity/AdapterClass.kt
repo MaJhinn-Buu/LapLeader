@@ -15,6 +15,7 @@ class AdapterClass(var dataList : ArrayList<DataClass>) : RecyclerView.Adapter<A
     }
 
     override fun onBindViewHolder(p0: ViewHolderClass, p1: Int) {
+
         var currentItems = dataList[p1]
         p0.rvImage.setImageResource(currentItems.dataImage)
         p0.rvTitle.text = currentItems.dataTitle
