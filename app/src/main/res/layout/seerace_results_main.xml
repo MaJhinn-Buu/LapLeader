@@ -60,18 +60,18 @@
                 app:layout_constraintVertical_bias="1.0" />
 
             <TextView
-        android:id="@+id/GPTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/montserrat_bold"
-        android:text="20xx Monaco GP"
-        android:textColor="#FFFFFF"
-        android:textSize="26sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dividerline" />
+                android:id="@+id/GPTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="2021 Monaco GP"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dividerline" />
 
     <TextView
         android:id="@+id/LapCount"
