@@ -43,7 +43,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/teamNameTitle"
             android:layout_width="200dp"
             android:layout_height="21dp"
             android:gravity="center"

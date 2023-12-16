@@ -49,23 +49,23 @@ class MainActivity : AppCompatActivity() {
 
                     if (dataList.isNotEmpty()) {
                         val isUsernameExists = dataList.any { it.Username == inputUsername }
-                        val isPasswordExists = dataList.any { it.Password == inputPassword }
-                        Log.i(isUsernameExists.toString(), isPasswordExists.toString())
-                        if (isUsernameExists && isPasswordExists) {
-                            val user = dataList.find { it.Username == inputUsername }
+                        val isPasswordCorrect = dataList.any { it.Username == inputUsername && it.Password == inputPassword }
+
+                        Log.i(isUsernameExists.toString(), isPasswordCorrect.toString())
+                        if (isUsernameExists && isPasswordCorrect) {
+                            val user = dataList.find { it.Username == inputUsername && it.Password == inputPassword }
                             Log.i("testing_forever", user?.Privilege.toString())
                             if (user?.Privilege == 1) {
                                 // User has privilege 1 (admin)
                                 val intent = Intent(this, MainMenu_Admin::class.java)
                                 startActivity(intent)
-                            } else if (user?.Privilege == 0){
+                            } else if (user?.Privilege == 0) {
                                 // User has other privileges (you might want to handle this case separately)
                                 val intent = Intent(this, MainMenu_User::class.java)
                                 startActivity(intent)
                             }
-                        }
-                        else{
-                           Toast.makeText(this, "Username or Password is incorrect!",Toast.LENGTH_SHORT).show()
+                        } else {
+                            Toast.makeText(this, "Username or Password is incorrect!", Toast.LENGTH_SHORT).show()
                         }
                     }
 

@@ -1,4 +1,7 @@
 package com.example.groupactivity
 
-data class DataClass(var dataImage: Int, var dataTitle: String){
-}
+data class DataClass(
+    val dataImage: Int,
+    val driverName: String,
+    val teamName: String
+)
