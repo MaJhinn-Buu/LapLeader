@@ -15,10 +15,10 @@ import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
-class EditRaceFindPage : AppCompatActivity() {
+class EditRaceFindPage : AppCompatActivity(), RaceAdapterClass.OnEditClickListener {
 
     lateinit var recyclerView: RecyclerView
-    lateinit var raceResult: ArrayList<Race_Results>
+    lateinit var raceList: MutableList<RaceDataClass>
     lateinit var databaseReference: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,39 +30,20 @@ class EditRaceFindPage : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.setHasFixedSize(true)
 
-        raceResult = arrayListOf()
+        raceList = mutableListOf()
 
         databaseReference = FirebaseDatabase.getInstance().getReference("FirebaseDatabase")
         databaseReference.child("Race Results").addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                val raceList = mutableListOf<RaceDataClass>()
-
                 for (raceNode in snapshot.children) {
                     val raceId = raceNode.key.toString()
-                    val raceDate = raceNode.child("gpdate").getValue(String::class.java) ?: "N/A" // Adjust "date" to the correct key
-                    val raceYear = raceNode.child("gpyear").getValue(Int::class.java) ?: 0 // Adjust "year" to the correct key
-                    val raceLocation = raceNode.child("location").getValue(String::class.java) ?: "N/A" // Adjust "location" to the correct key
-                    val raceLaps = raceNode.child("laps").getValue(Int::class.java) ?: 0 // Adjust "laps" to the correct key
+                    val raceDate = raceNode.child("gpdate").getValue(String::class.java) ?: "N/A"
 
-                    val driverList = ArrayList<String>()
-                    for (driverNode in raceNode.child("driverList").children) {
-                        val driver = driverNode.getValue(String::class.java) ?: ""
-                        driverList.add(driver)
-                    }
-
-                    val raceData = RaceDataClass(raceId, raceYear, raceDate, raceLocation, raceLaps, driverList)
+                    val raceData = RaceDataClass(raceId, 0, raceDate, "", 0, arrayListOf())
                     raceList.add(raceData)
                 }
-
-                val adapter = RaceAdapterClass(raceList, object : RaceAdapterClass.OnEditClickListener {
-                    override fun onEditClick(position: Int, raceData: RaceDataClass) {
-                        // Handle the edit click for the specified position
-                        val editIntent = Intent(this@EditRaceFindPage, EditRaceMainPage::class.java)
-                        editIntent.putExtra("raceData", raceData)
-                        startActivity(editIntent)
-                    }
-                })
-
+                
+                val adapter = RaceAdapterClass(raceList, this@EditRaceFindPage)
                 recyclerView.adapter = adapter
             }
 
@@ -80,5 +61,19 @@ class EditRaceFindPage : AppCompatActivity() {
                 // Handle exception if needed
             }
         }
+    }
+
+    override fun onEditClick(position: Int, raceData: RaceDataClass) {
+        // Handle the edit click for the specified position
+        val editIntent = Intent(this, EditRaceMainPage::class.java)
+        editIntent.putExtra("raceData", raceData)
+        startActivity(editIntent)
+    }
+
+    override fun onDeleteClick(position: Int, raceData: RaceDataClass) {
+        val raceIdToDelete = raceData.raceId
+        databaseReference.child("Race Results").child(raceIdToDelete).removeValue()
+        raceList.removeAt(position)
+        recyclerView.adapter?.notifyItemRemoved(position)
     }
 }

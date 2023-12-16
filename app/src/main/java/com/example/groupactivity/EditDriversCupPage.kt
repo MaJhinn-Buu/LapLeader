@@ -15,8 +15,8 @@ class EditDriversCupPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.edtstandings_driverscup)
-        var edtStanding : Button = findViewById(R.id.btnEdtStandsDriver)
-        var backBtn : ImageButton = findViewById(R.id.ESFDbackbutton)
+        val edtStanding : Button = findViewById(R.id.btnEdtStandsDriver)
+        val backBtn : ImageButton = findViewById(R.id.ESFDbackbutton)
 
         databaseReference = FirebaseDatabase.getInstance().getReference("FirebaseDatabase")
 
@@ -55,7 +55,7 @@ class EditDriversCupPage : AppCompatActivity() {
             "F. Alonso",
             "L. Stroll")
 
-        var driverList : ArrayList<String> = arrayListOf("M. Verstappen",
+        val driverList : ArrayList<String> = arrayListOf("M. Verstappen",
             "S. Perez",
             "C. Leclerc",
             "C. Sainz",
@@ -69,7 +69,7 @@ class EditDriversCupPage : AppCompatActivity() {
 
         val data2 = listOf("Red Bull", "Ferrari", "AMG Mercedes", "McLaren", "Aston Martin")
 
-        var teamList : ArrayList<String> = arrayListOf("Red Bull", "Ferrari", "AMG Mercedes", "McLaren", "Aston Martin")
+        val teamList : ArrayList<String> = arrayListOf("Red Bull", "Ferrari", "AMG Mercedes", "McLaren", "Aston Martin")
 
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, data1)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
@@ -101,13 +101,13 @@ class EditDriversCupPage : AppCompatActivity() {
 
 
         edtStanding.setOnClickListener {
-            var standings = Drivers(driverList, teamList)
+            val standings = Drivers(driverList, teamList)
         }
 
         backBtn.setOnClickListener {
             //This is to return to Login Page
             try {
-                var logIntent = Intent(this, MainMenu_Admin::class.java)
+                val logIntent = Intent(this, MainMenu_Admin::class.java)
                 startActivity(logIntent)
             } catch (e: Exception) {
 

@@ -10,13 +10,13 @@ class AdapterClass(var dataList : ArrayList<DataClass>) : RecyclerView.Adapter<A
 
     //We need to find a way to import variables from the database to here
     override  fun onCreateViewHolder(p0: ViewGroup, viewType: Int): AdapterClass.ViewHolderClass {
-        var itemView = LayoutInflater.from(p0.context).inflate(R.layout.leaderboardcard_layout, p0, false)
+        val itemView = LayoutInflater.from(p0.context).inflate(R.layout.leaderboardcard_layout, p0, false)
         return ViewHolderClass(itemView)
     }
 
     override fun onBindViewHolder(p0: ViewHolderClass, p1: Int) {
 
-        var currentItems = dataList[p1]
+        val currentItems = dataList[p1]
         p0.rvImage.setImageResource(currentItems.dataImage)
         p0.rvTitle.text = currentItems.dataTitle
     }

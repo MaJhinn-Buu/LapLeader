@@ -17,12 +17,14 @@ class RaceAdapterClass(
 
     interface OnEditClickListener {
         fun onEditClick(position: Int, raceData: RaceDataClass)
+        fun onDeleteClick(position: Int, raceData: RaceDataClass)
     }
 
     class RaceViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val raceName: TextView = itemView.findViewById(R.id.raceNameTitle)
         val raceDate: TextView = itemView.findViewById(R.id.raceDateTitle)
-        val editButton: Button = itemView.findViewById(R.id.edtRaceResult_Btn_EDT)  // Replace with your actual edit button ID
+        val editButton: Button = itemView.findViewById(R.id.edtRaceResult_Btn_EDT)
+        val deleteButton: Button = itemView.findViewById(R.id.edtRaceResult_Btn_DEL)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RaceViewHolder {
@@ -36,12 +38,16 @@ class RaceAdapterClass(
         holder.raceName.text = currentRace.raceId
         holder.raceDate.text = currentRace.date
 
-
+        // Set up the "Edit" button functionality
         holder.editButton.setOnClickListener {
             onEditClickListener.onEditClick(position, currentRace)
         }
-    }
 
+        // Set up the "Delete" button functionality
+        holder.deleteButton.setOnClickListener {
+            onEditClickListener.onDeleteClick(position, currentRace)
+        }
+    }
 
     override fun getItemCount(): Int {
         return raceList.size
