@@ -6,6 +6,7 @@ import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Spinner
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -117,6 +118,7 @@ class EditDriversCupPage : AppCompatActivity() {
                 "10" to standingItem10
             )
             databaseReference.child("Standings").setValue(standingsMap)
+            Toast.makeText(this, "Success - UPDATE", Toast.LENGTH_LONG).show()
         }
 
         backBtn.setOnClickListener {
