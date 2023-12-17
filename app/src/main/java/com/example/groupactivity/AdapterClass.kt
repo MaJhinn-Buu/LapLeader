@@ -26,7 +26,7 @@ class AdapterClass(var dataList: ArrayList<DataClass>) : RecyclerView.Adapter<Ad
             "aston martin" -> R.drawable.astonmartinlogo
             "ferrari" -> R.drawable.ferrarilogo
             "amg mercedes" -> R.drawable.mercedeslogo
-            else -> R.drawable.f1logo // Provide a default logo if team name is not recognized
+            else -> R.drawable.ourhero // Provide a default logo if team name is not recognized
         }
 
         p0.rvImage.setImageResource(teamLogo)

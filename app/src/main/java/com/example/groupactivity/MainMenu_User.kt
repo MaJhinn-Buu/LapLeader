@@ -63,6 +63,18 @@ class MainMenu_User : AppCompatActivity() {
                 Log.e("MainMenu_User", "Error starting SeeRaceFindPage", e)
             }
         }
+
+        seeStand.setOnClickListener {
+            Log.d("MainMenu_User", "See Standings button clicked")
+
+            try {
+                var StandIntent = Intent(this, StandingsDriverPage::class.java)
+                startActivity((StandIntent))
+            }
+            catch (e:Exception) {
+                Log.e("MainMenu_User", "Error starting Standings Page", e)
+            }
+        }
     }
 
     private fun getData() {
