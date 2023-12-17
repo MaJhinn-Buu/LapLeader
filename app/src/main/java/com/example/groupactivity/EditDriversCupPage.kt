@@ -47,19 +47,20 @@ class EditDriversCupPage : AppCompatActivity() {
         val spinnerTeam10: Spinner = findViewById(R.id.P10Const_ESD)
 
         val data1 = listOf(
-            "M. Verstappen",
-            "S. Perez",
-            "C. Leclerc",
-            "C. Sainz",
-            "L. Hamilton",
-            "G. Russell",
-            "L. Norris",
-            "O. Piastri",
-            "F. Alonso",
-            "L. Stroll"
+            "Max Verstappen",
+            "Sergio Perez",
+            "Charles Leclerc",
+            "Carlos Sainz",
+            "Lewis Hamilton",
+            "George Russell",
+            "Lando Norris",
+            "Oscar Piastri",
+            "Fernando Alonso",
+            "Lance Stroll",
+            "AMADO SAPIT III"
         )
 
-        val data2 = listOf("Red Bull", "Ferrari", "AMG Mercedes", "McLaren", "Aston Martin")
+        val data2 = listOf("Red Bull", "Ferrari", "AMG Mercedes", "McLaren", "Aston Martin", "Mob Dev")
 
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, data1)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
